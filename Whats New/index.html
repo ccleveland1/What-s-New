@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>What's New</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  <style>
+    .nav-bar .fa-bullhorn{
+      color:#0360EB;
+      position: absolute;
+      font-size: 30px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      left: 909px;
+      top: 7px;
+    }
+    .main-header{
+      position: absolute;
+      width: 659px;
+      height: 58px;
+      background: #FFFFFF;
+      border: 1px solid #E3E3E3;
+      box-sizing: border-box;
+      border-radius: 10px 10px 0px 0px;
+      display: inline-block;
+      top: 63px;
+      left: 500px;
+        margin-top: 20px;
+    }
+    .main-header .fa-bullhorn{
+      color:#5C5C5C;
+      font-size: 20px;
+        margin-left: 29px;
+        /* top: 88px; */
+        display: inline-block;
+    }
+    .title{
+        margin-left: 10px;
+        margin-top: 17px;
+        color: #252525;
+        font-size: 20px;
+        display: inline-block;
+        font-weight: 500;
+        line-height: 23px;
+        letter-spacing: 0.01em;
+    }
+    .version-history{
+        display: inline-block;
+        color: #0066FF;
+        font-size: 16px;
+    }
+    .version-history .button{
+          color: #252525;
+    }
+
+    .tools{
+      float: right;
+      margin-top: 15px;
+      margin-right: 30px;
+    }
+
+    .version{
+      margin-top:10px;
+      margin-bottom: 10px;
+      display:inline-block;
+      font-size: 14px;
+      color: #000000;
+      margin-right: 10px;
+    }
+
+    /* BODY */
+
+    .inner-container{
+      position: absolute;
+      width: 659px;
+      height: 673px;
+      background: #F5F5F5;
+      border: 1px solid #E3E3E3;
+      box-sizing: border-box;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 0px 0px 10px 10px;
+      top: 141px;
+      left: 500px;
+      overflow-y: scroll;
+    }
+    .row-1{
+      margin-top:10px;
+    }
+    .summary{
+      display:inline-block;
+      font-size:18px;
+      margin-top:5px;
+      margin-left: 18px;
+    }
+    .icons{
+      display:inline-block;
+      float:right;
+      margin-right: 20px;
+    }
+    .action-icon{
+      display: inline-block;
+      font-size: 20px;
+      margin-right: 10px;
+      color:#5C5C5C;
+    }
+
+    .exit-icon{
+      display: inline-block;
+      font-size: 22px;
+        margin-left: 15px;
+    }
+
+    .video{
+      margin-left:25px;
+      margin-top: 10px;
+    }
+    
+    .section-title-1{
+      margin-top: 15px;
+      margin-left:10px;
+      font-size: 18px;
+    }
+    .section-title{
+      margin-top: 10px;
+      margin-left:10px;
+      font-size: 18px;
+    }
+
+    .section-container{
+      background: #FFFFFF;
+      border: 1px solid #BFC1C3;
+      box-sizing: border-box;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 3px;
+      padding-bottom: 15px;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    .new-feature{ 
+      box-sizing: border-box;
+      background: #E0F7ED;
+      border-radius: 2px;
+      padding: 0px 5px 3px 5px;
+      margin-left: 10px;
+    }
+    .new-feature-color{
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.01em;
+      color: #17C479;
+    }
+    .enhancement{ 
+      box-sizing: border-box;
+      background: #C1E2FF;
+      border-radius: 2px;
+      padding: 0px 5px 3px 5px;
+      margin-left: 10px;
+    }
+    .enhancement-color{
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.01em;
+      color: #0264B9;
+    }
+    .bug-fix{ 
+      box-sizing: border-box;
+      background: #D3BCF2;
+      border-radius: 2px;
+      padding: 0px 5px 3px 5px;
+      margin-left: 10px;
+    }
+    .bug-fix-color{
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.01em;
+      color: #7108FF;
+    }
+
+    .list{
+      margin-left: 10px;
+      margin-top: 5px;
+      font-size: 15px;
+      line-height: 19px;
+      letter-spacing: 0.01em;
+    }
+
+    /* VERSION HISTORY PAGE */
+
+    .action-icon-2{
+      display: inline-block;
+      font-size: 15px;
+      margin-right: 20px;
+      margin-top: 2px;
+        color: #5C5C5C;
+        float:right;
+    }
+
+
+    .fa-angle-left{
+        font-size: 28px;
+        color: #5C5C5C;
+        margin-left: 15px;
+
+    }
+
+    .time-stamp{
+      float:right;
+      margin-right:20px;
+      font-size: 16px;
+    }
+  </style>
+
+</head>
+<body>
+	<div class="nav-bar">
+		<i class="fas fa-bullhorn"></i>
+	</div>
+
+  <div class="outer-container">
+    <div class="main-header">
+       <i class="fas fa-bullhorn"></i>
+        <div class="title">What's New</div>
+
+        <div class="tools">
+          <div class="version-history"><a href="index2.html" class="button">Version History</a></div>
+            <div class="exit-icon">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <div type="" class="inner-container">
+     <!-- <hr class="header-border"> -->
+     <div class="row-1">
+       <div class="summary">New features, enhancements and bug fixes.</div>
+       <div class="icons">
+            <div class="version">Version 3.3.10</div>
+            <div class="action-icon" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="Print Version"><i class="fas fa-print"></i></div>
+
+            <div class="action-icon" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="Download as PDF"><i class="fas fa-download"></i></div>
+         </div>
+     </div>
+
+      <div class="section-container">
+        <div class="section-title-1"><strong>What's New</strong><span class="new-feature"><span class="new-feature-color">New Feature</span></span></div>
+        <div class="list">We've created a new tool for keeping up to date with all of the new features, updates and improvements we are working on. If you ever what to see some new tools we have created to help you be the best you can be, make sure to check it out!</div><iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/WLii-gEmaX8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <div class="section-container">
+        <div class="section-title"><strong>A.E. Retracement</strong><span class="enhancement"><span class="enhancement-color">Enhancement</span></span></div>
+        <div class="list">We've made some enhancements and fixed a few bugs to make OAnet even better for you, because we believe small change adds up. We implemented candidate tracking which will allow you to stay updated on their status.</div>
+      </div>
+
+      <div class="section-container">
+        <div class="section-title"><strong>People Search Bug Fix</strong><span class="bug-fix"><span class="bug-fix-color">Bug Fix</span></span></div>
+        <div class="list">We've made some enhancements and fixed a few bugs to make OAnet even better for you, because we believe small change adds up. The search results will now be more exact and targetted.</div>
+      </div>
+
+      <div class="section-container">
+        <div class="section-title"><strong>Client Lead Business Card Capture</strong><span class="new-feature"><span class="new-feature-color">New Feature</span></span></div>
+        <div class="list">We've made some enhancements and fixed a few bugs to make OAnet even better for you, because we believe small change adds up. We implemented candidate tracking which will allow more flexibility in the field.</div><iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/WLii-gEmaX8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    
+     <div class="section-container">
+        <div class="section-title"><strong>Candidate Tracking</strong><span class="enhancement"><span class="enhancement-color">Enhancement</span></span></div>
+        <div class="list">We've made some enhancements and fixed a few bugs to make OAnet even better for you, because we believe small change adds up.</div>
+     </div>
+
+    <div class="section-container">
+      <div class="section-title-1"><strong>What's New</strong><span class="new-feature"><span class="new-feature-color">New Feature</span></span></div>
+      <div class="list">We've created a new tool for keeping up to date with all of the new features, updates and improvements we are working on. If you ever what to see some new tools we have created to help you be the best you can be, make sure to check it out!</div><iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/WLii-gEmaX8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+   <div class="section-container">
+      <div class="section-title"><strong>Candidate Tracking</strong><span class="enhancement"><span class="enhancement-color">Enhancement</span></span></div>
+      <div class="list">We've made some enhancements and fixed a few bugs to make OAnet even better for you, because we believe small change adds up.</div>
+   </div>
+
+    <div class="section-container">
+      <div class="section-title"><strong>People Search Bug Fix</strong><span class="bug-fix"><span class="bug-fix-color">Bug Fix</span></span></div>
+      <div class="list">We've made some enhancements and fixed a few bugs to make OAnet even better for you, because we believe small change adds up. The search results will now be more exact and targetted.</div>
+    </div>
+
+    </div>
+  </div>
+
+</body>
